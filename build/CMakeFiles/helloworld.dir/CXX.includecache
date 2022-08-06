@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cap/code/test/ceres_demo/src/helloworld.cpp
+ceres/ceres.h
+/home/cap/code/test/ceres_demo/src/ceres/ceres.h
+glog/logging.h
+/home/cap/code/test/ceres_demo/src/glog/logging.h
+iostream
+-
+
