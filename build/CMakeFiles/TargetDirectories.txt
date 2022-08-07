@@ -1,4 +1,5 @@
 /home/cap/code/test/ceres_demo/build/CMakeFiles/rebuild_cache.dir
 /home/cap/code/test/ceres_demo/build/CMakeFiles/edit_cache.dir
+/home/cap/code/test/ceres_demo/build/CMakeFiles/simpleBA.dir
 /home/cap/code/test/ceres_demo/build/CMakeFiles/curvefitting.dir
 /home/cap/code/test/ceres_demo/build/CMakeFiles/powellfunc.dir

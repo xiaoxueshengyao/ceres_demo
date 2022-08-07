@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cap/code/test/ceres_demo/src/simpleBA.cpp
+cmath
+-
+cstdio
+-
+iostream
+-
+ceres/ceres.h
+/home/cap/code/test/ceres_demo/src/ceres/ceres.h
+ceres/rotation.h
+/home/cap/code/test/ceres_demo/src/ceres/rotation.h
+

@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/cap/code/test/ceres_demo/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/simpleBA.dir/all
 all: CMakeFiles/curvefitting.dir/all
 all: CMakeFiles/powellfunc.dir/all
 
@@ -64,10 +65,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/simpleBA.dir/clean
 clean: CMakeFiles/curvefitting.dir/clean
 clean: CMakeFiles/powellfunc.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/simpleBA.dir
+
+# All Build rule for target.
+CMakeFiles/simpleBA.dir/all:
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/depend
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cap/code/test/ceres_demo/build/CMakeFiles --progress-num=5,6 "Built target simpleBA"
+.PHONY : CMakeFiles/simpleBA.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/simpleBA.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cap/code/test/ceres_demo/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simpleBA.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cap/code/test/ceres_demo/build/CMakeFiles 0
+.PHONY : CMakeFiles/simpleBA.dir/rule
+
+# Convenience name for target.
+simpleBA: CMakeFiles/simpleBA.dir/rule
+
+.PHONY : simpleBA
+
+# clean rule for target.
+CMakeFiles/simpleBA.dir/clean:
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/clean
+.PHONY : CMakeFiles/simpleBA.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/curvefitting.dir

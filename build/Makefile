@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named simpleBA
+
+# Build rule for target.
+simpleBA: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simpleBA
+.PHONY : simpleBA
+
+# fast build rule for target.
+simpleBA/fast:
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/build
+.PHONY : simpleBA/fast
+
+#=============================================================================
 # Target rules for targets named curvefitting
 
 # Build rule for target.
@@ -190,6 +203,33 @@ src/powell_function.cpp.s:
 	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/src/powell_function.cpp.s
 .PHONY : src/powell_function.cpp.s
 
+src/simpleBA.o: src/simpleBA.cpp.o
+
+.PHONY : src/simpleBA.o
+
+# target to build an object file
+src/simpleBA.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/src/simpleBA.cpp.o
+.PHONY : src/simpleBA.cpp.o
+
+src/simpleBA.i: src/simpleBA.cpp.i
+
+.PHONY : src/simpleBA.i
+
+# target to preprocess a source file
+src/simpleBA.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/src/simpleBA.cpp.i
+.PHONY : src/simpleBA.cpp.i
+
+src/simpleBA.s: src/simpleBA.cpp.s
+
+.PHONY : src/simpleBA.s
+
+# target to generate assembly for a file
+src/simpleBA.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleBA.dir/build.make CMakeFiles/simpleBA.dir/src/simpleBA.cpp.s
+.PHONY : src/simpleBA.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +238,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... simpleBA"
 	@echo "... curvefitting"
 	@echo "... powellfunc"
 	@echo "... src/curve_fitting.o"
@@ -206,6 +247,9 @@ help:
 	@echo "... src/powell_function.o"
 	@echo "... src/powell_function.i"
 	@echo "... src/powell_function.s"
+	@echo "... src/simpleBA.o"
+	@echo "... src/simpleBA.i"
+	@echo "... src/simpleBA.s"
 .PHONY : help
 
 

@@ -18,3 +18,6 @@ target_link_libraries(powellfunc ${CERES_LIBRARIES})
 
 add_executable(curvefitting src/curve_fitting.cpp)
 target_link_libraries(curvefitting ${CERES_LIBRARIES})
+
+add_executable(simpleBA src/simpleBA.cpp)
+target_link_libraries(simpleBA ${CERES_LIBRARIES})
