@@ -15,3 +15,6 @@ include_directories(
 
 add_executable(powellfunc src/powell_function.cpp)
 target_link_libraries(powellfunc ${CERES_LIBRARIES})
+
+add_executable(curvefitting src/curve_fitting.cpp)
+target_link_libraries(curvefitting ${CERES_LIBRARIES})

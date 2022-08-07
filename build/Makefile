@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named curvefitting
+
+# Build rule for target.
+curvefitting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 curvefitting
+.PHONY : curvefitting
+
+# fast build rule for target.
+curvefitting/fast:
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/build
+.PHONY : curvefitting/fast
+
+#=============================================================================
 # Target rules for targets named powellfunc
 
 # Build rule for target.
@@ -122,6 +135,33 @@ powellfunc: cmake_check_build_system
 powellfunc/fast:
 	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/build
 .PHONY : powellfunc/fast
+
+src/curve_fitting.o: src/curve_fitting.cpp.o
+
+.PHONY : src/curve_fitting.o
+
+# target to build an object file
+src/curve_fitting.cpp.o:
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/src/curve_fitting.cpp.o
+.PHONY : src/curve_fitting.cpp.o
+
+src/curve_fitting.i: src/curve_fitting.cpp.i
+
+.PHONY : src/curve_fitting.i
+
+# target to preprocess a source file
+src/curve_fitting.cpp.i:
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/src/curve_fitting.cpp.i
+.PHONY : src/curve_fitting.cpp.i
+
+src/curve_fitting.s: src/curve_fitting.cpp.s
+
+.PHONY : src/curve_fitting.s
+
+# target to generate assembly for a file
+src/curve_fitting.cpp.s:
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/src/curve_fitting.cpp.s
+.PHONY : src/curve_fitting.cpp.s
 
 src/powell_function.o: src/powell_function.cpp.o
 
@@ -158,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... curvefitting"
 	@echo "... powellfunc"
+	@echo "... src/curve_fitting.o"
+	@echo "... src/curve_fitting.i"
+	@echo "... src/curve_fitting.s"
 	@echo "... src/powell_function.o"
 	@echo "... src/powell_function.i"
 	@echo "... src/powell_function.s"

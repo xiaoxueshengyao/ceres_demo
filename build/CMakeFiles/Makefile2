@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/cap/code/test/ceres_demo/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/curvefitting.dir/all
 all: CMakeFiles/powellfunc.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/curvefitting.dir/clean
 clean: CMakeFiles/powellfunc.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/curvefitting.dir
+
+# All Build rule for target.
+CMakeFiles/curvefitting.dir/all:
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/depend
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cap/code/test/ceres_demo/build/CMakeFiles --progress-num=1,2 "Built target curvefitting"
+.PHONY : CMakeFiles/curvefitting.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/curvefitting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cap/code/test/ceres_demo/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/curvefitting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cap/code/test/ceres_demo/build/CMakeFiles 0
+.PHONY : CMakeFiles/curvefitting.dir/rule
+
+# Convenience name for target.
+curvefitting: CMakeFiles/curvefitting.dir/rule
+
+.PHONY : curvefitting
+
+# clean rule for target.
+CMakeFiles/curvefitting.dir/clean:
+	$(MAKE) -f CMakeFiles/curvefitting.dir/build.make CMakeFiles/curvefitting.dir/clean
+.PHONY : CMakeFiles/curvefitting.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/powellfunc.dir
@@ -74,7 +103,7 @@ clean: CMakeFiles/powellfunc.dir/clean
 CMakeFiles/powellfunc.dir/all:
 	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/depend
 	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cap/code/test/ceres_demo/build/CMakeFiles --progress-num=1,2 "Built target powellfunc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cap/code/test/ceres_demo/build/CMakeFiles --progress-num=3,4 "Built target powellfunc"
 .PHONY : CMakeFiles/powellfunc.dir/all
 
 # Build rule for subdir invocation for target.
