@@ -10,5 +10,8 @@ include_directories(
     ${CERES_INCLUDE_DIRS}
 )
 
-add_executable(helloworld src/helloworld.cpp)
-target_link_libraries(helloworld ${CERES_LIBRARIES})
+# add_executable(helloworld src/helloworld.cpp)
+# target_link_libraries(helloworld ${CERES_LIBRARIES})
+
+add_executable(powellfunc src/powell_function.cpp)
+target_link_libraries(powellfunc ${CERES_LIBRARIES})

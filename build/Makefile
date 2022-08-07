@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named helloworld
+# Target rules for targets named powellfunc
 
 # Build rule for target.
-helloworld: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 helloworld
-.PHONY : helloworld
+powellfunc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 powellfunc
+.PHONY : powellfunc
 
 # fast build rule for target.
-helloworld/fast:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+powellfunc/fast:
+	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/build
+.PHONY : powellfunc/fast
 
-src/helloworld.o: src/helloworld.cpp.o
+src/powell_function.o: src/powell_function.cpp.o
 
-.PHONY : src/helloworld.o
+.PHONY : src/powell_function.o
 
 # target to build an object file
-src/helloworld.cpp.o:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/src/helloworld.cpp.o
-.PHONY : src/helloworld.cpp.o
+src/powell_function.cpp.o:
+	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/src/powell_function.cpp.o
+.PHONY : src/powell_function.cpp.o
 
-src/helloworld.i: src/helloworld.cpp.i
+src/powell_function.i: src/powell_function.cpp.i
 
-.PHONY : src/helloworld.i
+.PHONY : src/powell_function.i
 
 # target to preprocess a source file
-src/helloworld.cpp.i:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/src/helloworld.cpp.i
-.PHONY : src/helloworld.cpp.i
+src/powell_function.cpp.i:
+	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/src/powell_function.cpp.i
+.PHONY : src/powell_function.cpp.i
 
-src/helloworld.s: src/helloworld.cpp.s
+src/powell_function.s: src/powell_function.cpp.s
 
-.PHONY : src/helloworld.s
+.PHONY : src/powell_function.s
 
 # target to generate assembly for a file
-src/helloworld.cpp.s:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/src/helloworld.cpp.s
-.PHONY : src/helloworld.cpp.s
+src/powell_function.cpp.s:
+	$(MAKE) -f CMakeFiles/powellfunc.dir/build.make CMakeFiles/powellfunc.dir/src/powell_function.cpp.s
+.PHONY : src/powell_function.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... helloworld"
-	@echo "... src/helloworld.o"
-	@echo "... src/helloworld.i"
-	@echo "... src/helloworld.s"
+	@echo "... powellfunc"
+	@echo "... src/powell_function.o"
+	@echo "... src/powell_function.i"
+	@echo "... src/powell_function.s"
 .PHONY : help
 
 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cap/code/test/ceres_demo/src/powell_function.cpp
+ceres/ceres.h
+/home/cap/code/test/ceres_demo/src/ceres/ceres.h
+gflags/gflags.h
+/home/cap/code/test/ceres_demo/src/gflags/gflags.h
+glog/logging.h
+/home/cap/code/test/ceres_demo/src/glog/logging.h
+vector
+-
+iostream
+-
+
